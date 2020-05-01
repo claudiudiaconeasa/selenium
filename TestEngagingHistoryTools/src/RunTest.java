@@ -24,15 +24,6 @@ public class RunTest {
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         
-        if(testAboutButton())
-        {
-        	System.out.println("Prompted to - 'About' section");
-        }
-        
-        else
-        {
-        	System.out.println("Can't get loader page ready to fetch the calendar for History of Manchester University and City of Manchester");
-        }
         
         if(testCalendarButton())
         {
@@ -52,6 +43,15 @@ public class RunTest {
         else
         {
         	System.out.println("Can't get loader page ready to fetch the calendar for History of Computing");
+        }
+        if(testAboutButton())
+        {
+        	System.out.println("Prompted to - 'About' section");
+        }
+      
+        else
+        {
+        	System.out.println("Can't get loader page ready to fetch the calendar for History of Manchester University and City of Manchester");
         }
        
      
